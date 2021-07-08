@@ -16,7 +16,7 @@ Feature: Enquire feature
       | Tester Selenium   | tester.6622@gmail.com | 6622662262 | 713403 |
       | Tester Automation | tester.622@gmail.com  | 1234567890 | 713212 |
 
-  Scenario Outline: Enquire with valid  details
+  Scenario Outline: Enquire with invalid  details
     Given the user is on the home page of Asian Paints
     When user enter invalid Name as "<name>"
     And user enter invalid Email as "<email>"
