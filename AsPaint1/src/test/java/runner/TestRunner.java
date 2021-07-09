@@ -11,7 +11,7 @@ public class TestRunner {
 
 }
 // todo
-// testNG
+// testNG Done
 // base class and extend
-// properties file
-// assert statements
+// properties file Done
+// assert statements Done

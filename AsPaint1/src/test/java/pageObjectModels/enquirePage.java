@@ -48,25 +48,29 @@ public class enquirePage {
 	public void clickEnquireNow() {
 		enqButton.click();
 	}
-	public void verifySuccessMessage() throws InterruptedException {
+	public String verifySuccessMessage() throws InterruptedException {
 		Thread.sleep(2000);
 		String data= successMsg.getText(); 
 		System.out.println("#############################################################");
 		System.out.println(data);
 		System.out.println("#############################################################");
+		return data;
 	}
 	public void closePage() {
 		System.out.println("Browser Closed");
 	}
-	public void verifyErrorMessages() throws InterruptedException {
+	public String verifyErrorMessages() throws InterruptedException {
 		Thread.sleep(2000);
 		String error_name=errorName.getText();
 		String error_email=errorEmail.getText();
 		String error_mobile=errorMobile.getText();
 		String error_pin=errorPincode.getText();
 		
+		String output=error_name+error_email+error_mobile+error_pin;
 		System.out.println("#############################################################");
-		System.out.println(error_name+" "+error_email+" "+error_mobile+" "+error_pin);
+		System.out.println(error_name+error_email+error_mobile+error_pin);
 		System.out.println("#############################################################");
+		return output;
+	
 	}
 }
