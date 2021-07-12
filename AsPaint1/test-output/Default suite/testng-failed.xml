@@ -5,10 +5,11 @@
     <classes>
       <class name="testNg.asPaintTestNg">
         <methods>
-          <include name="EnquireFormWithValidData"/>
+          <include name="iosAppstoreLink"/>
           <include name="beforeSuite"/>
           <include name="afterTest"/>
           <include name="beforeTest"/>
+          <include name="afterSute"/>
         </methods>
       </class> <!-- testNg.asPaintTestNg -->
     </classes>

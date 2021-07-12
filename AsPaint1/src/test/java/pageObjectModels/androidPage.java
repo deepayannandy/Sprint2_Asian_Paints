@@ -19,7 +19,7 @@ public class androidPage {
 		downloadAndroidButton.click();
 	}
 	public  String verifyPlayStorePage() throws InterruptedException {
-		Thread.sleep(4000);
+		Thread.sleep(5000);
 		String window_titel= driver.getTitle();
 		System.out.println("#############################################################");
 		System.out.println(window_titel);
