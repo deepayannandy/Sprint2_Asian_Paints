@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\deenandy\AppData\Local\Temp\testng-eclipse-506477774\testng-customsuite.xml</span>
+                    <span>C:\Users\deenandy\AppData\Local\Temp\testng-eclipse--875296553\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,27 +102,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testNg.asPaintTestNg" class="method navigator-link" hash-for-method="EnquireFormWithInvalidEmail">EnquireFormWithInvalidEmail</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testNg.asPaintTestNg" class="method navigator-link" hash-for-method="EnquireFormWithInvalidMobile">EnquireFormWithInvalidMobile</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testNg.asPaintTestNg" class="method navigator-link" hash-for-method="EnquireFormWithInvalidName">EnquireFormWithInvalidName</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="testNg.asPaintTestNg" class="method navigator-link" hash-for-method="EnquireFormWithInvalidPincode">EnquireFormWithInvalidPincode</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testNg.asPaintTestNg" class="method navigator-link" hash-for-method="EnquireFormWithValidData">EnquireFormWithValidData</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -145,37 +125,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="EnquireFormWithInvalidEmail">
-                  </a> <!-- EnquireFormWithInvalidEmail -->
-                  <span class="method-name">EnquireFormWithInvalidEmail</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="EnquireFormWithInvalidMobile">
-                  </a> <!-- EnquireFormWithInvalidMobile -->
-                  <span class="method-name">EnquireFormWithInvalidMobile</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="EnquireFormWithInvalidName">
-                  </a> <!-- EnquireFormWithInvalidName -->
-                  <span class="method-name">EnquireFormWithInvalidName</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="EnquireFormWithInvalidPincode">
                   </a> <!-- EnquireFormWithInvalidPincode -->
                   <span class="method-name">EnquireFormWithInvalidPincode</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="EnquireFormWithValidData">
-                  </a> <!-- EnquireFormWithValidData -->
-                  <span class="method-name">EnquireFormWithValidData</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -183,7 +135,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\deenandy\AppData\Local\Temp\testng-eclipse-506477774\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\deenandy\AppData\Local\Temp\testng-eclipse--875296553\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -192,7 +144,11 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testNg.asPaintTestNg&quot;/&gt;
+      &lt;class name=&quot;testNg.asPaintTestNg&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;EnquireFormWithInvalidPincode&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testNg.asPaintTestNg --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -232,32 +188,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'EnquireFormWithInvalidName')
+data.setCell(0, 1, 'EnquireFormWithInvalidPincode')
 data.setCell(0, 2, 'testNg.asPaintTestNg')
-data.setCell(0, 3, 3048);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'EnquireFormWithInvalidMobile')
-data.setCell(1, 2, 'testNg.asPaintTestNg')
-data.setCell(1, 3, 3014);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'EnquireFormWithValidData')
-data.setCell(2, 2, 'testNg.asPaintTestNg')
-data.setCell(2, 3, 2994);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'EnquireFormWithInvalidEmail')
-data.setCell(3, 2, 'testNg.asPaintTestNg')
-data.setCell(3, 3, 2984);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'EnquireFormWithInvalidPincode')
-data.setCell(4, 2, 'testNg.asPaintTestNg')
-data.setCell(4, 3, 2876);
+data.setCell(0, 3, 2900);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -272,9 +212,32 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">9 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testNg.asPaintTestNg</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">EnquireFormWithValidData</span>
+                <br/>
+                <span class="ignored-method-name">iosAppstoreLink</span>
+                <br/>
+                <span class="ignored-method-name">appDownloadSmsInvalidNumber</span>
+                <br/>
+                <span class="ignored-method-name">appDownloadSmsValidNumber</span>
+                <br/>
+                <span class="ignored-method-name">EnquireFormWithInvalidEmail</span>
+                <br/>
+                <span class="ignored-method-name">EnquireFormWithInvalidMobile</span>
+                <br/>
+                <span class="ignored-method-name">EnquireFormWithInvalidName</span>
+                <br/>
+                <span class="ignored-method-name">exploreStore</span>
+                <br/>
+                <span class="ignored-method-name">androidPlaystoreLink</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -293,60 +256,12 @@ return data;
                 <span class="method-start">27 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">EnquireFormWithValidData</span>
-                <span class="method-start">11579 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">14575 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeTest</span>
-                <span class="method-start">15326 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">EnquireFormWithInvalidName</span>
-                <span class="method-start">27129 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">30178 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeTest</span>
-                <span class="method-start">30906 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">EnquireFormWithInvalidEmail</span>
-                <span class="method-start">42635 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">45620 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeTest</span>
-                <span class="method-start">46341 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">EnquireFormWithInvalidMobile</span>
-                <span class="method-start">59417 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">62432 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeTest</span>
-                <span class="method-start">63156 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
                 <span class="method-name">EnquireFormWithInvalidPincode</span>
-                <span class="method-start">75944 ms</span>
+                <span class="method-start">13120 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">78821 ms</span>
+                <span class="method-start">16022 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

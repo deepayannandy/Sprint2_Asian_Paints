@@ -28,19 +28,22 @@ public class mobileNumberPage {
 	public void clickGetLink() {
 		getLinkButton.click();
 	}
-	public void verifySms() throws InterruptedException {
+	public String verifySms() throws InterruptedException {
 		Thread.sleep(5000);
 		try {
 		String successmessage= sendSuccess.getText(); 
 		System.out.println("#############################################################");
 		System.out.println(successmessage);
 		System.out.println("#############################################################");
+		return successmessage;
 		}
 		catch(Exception e){
 			String error_message= sendFail.getText(); 
 			System.out.println("#############################################################");
 			System.out.println(error_message);
 			System.out.println("#############################################################");
+			return error_message;
 		}
+		
 	}
 }

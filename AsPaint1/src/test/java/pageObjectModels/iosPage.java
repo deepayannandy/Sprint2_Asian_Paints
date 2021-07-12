@@ -26,11 +26,12 @@ public class iosPage {
 	public  void clickDownloadIosApp() {
 		downloadIosButton.click();
 	}
-	public  void verifyAppStorePage() throws InterruptedException {
+	public  String verifyAppStorePage() throws InterruptedException {
 		Thread.sleep(4000);
 		String window_titel= driver.getTitle();
 		System.out.println("#############################################################");
 		System.out.println(window_titel);
 		System.out.println("#############################################################");
+		return window_titel;
 	}
 }

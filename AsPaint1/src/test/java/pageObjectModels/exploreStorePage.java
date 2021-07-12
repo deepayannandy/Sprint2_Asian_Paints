@@ -29,11 +29,12 @@ public class exploreStorePage {
 	public void clickGo() {
 		goButton.click();
 	}
-	public void verifyExploreStore() throws InterruptedException {
+	public String verifyExploreStore() throws InterruptedException {
 		Thread.sleep(5000);
 		String page_title=driver.getTitle();
 		System.out.println("#############################################################");
 		System.out.println(page_title);
 		System.out.println("#############################################################");
+		return page_title;
 	}
 }

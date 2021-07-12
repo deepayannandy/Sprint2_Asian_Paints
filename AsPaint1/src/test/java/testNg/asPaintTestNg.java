@@ -1,5 +1,7 @@
 package testNg;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
@@ -98,9 +100,8 @@ public class asPaintTestNg {
 	  enquirePageWebElements.writePincode("731403");
 	  enquirePageWebElements.clickEnquireNow();
 	  AssertJUnit.assertEquals("Phone number is invalid",enquirePageWebElements.verifyErrorMessages());
-	  
   }
-//Method 5: Test Enquire form using invalid pincode
+//Method 5: Test Enquire form using invalid pinCode
   @Test (priority= 5)
   public void EnquireFormWithInvalidPincode() throws InterruptedException {
 	  enquirePageWebElements.writeName("Deepayan Tester");
@@ -111,10 +112,47 @@ public class asPaintTestNg {
 	  AssertJUnit.assertEquals("Enter a valid 6 digit Zip Code",enquirePageWebElements.verifyErrorMessages());
 	  
   }
+  
+//Method 6: Test Explore store using pin code
+  @Test (priority= 6)
+  public void exploreStore() throws Exception {
+	  exploreStorePageWebElement.scrollToExploreStore();
+	  exploreStorePageWebElement.writePinExploreStore("713212");
+	  exploreStorePageWebElement.clickGo();
+	  AssertJUnit.assertEquals("Store Locator: Design Solutions for a Beautiful Home Makeover - Asian Paints",exploreStorePageWebElement.verifyExploreStore());
+  }
+//Method 7: Test app download through sms part using valid mobile number
+  @Test (priority =7)
+  public void appDownloadSmsValidNumber() throws InterruptedException {
+	  mobileNumberPageWebElement.writeMobileNumber("1234567890");
+	  mobileNumberPageWebElement. clickGetLink();
+	  AssertJUnit.assertEquals("Message has been successfully sent to 1234567890.",mobileNumberPageWebElement.verifySms());
+  }
+//Method 8: Test app download through sms part using invalid mobile number
+  @Test (priority =8)
+  public void appDownloadSmsInvalidNumber() throws InterruptedException {
+	  mobileNumberPageWebElement.writeMobileNumber("12345678");
+	  mobileNumberPageWebElement. clickGetLink();
+	  AssertJUnit.assertEquals("Phone number is invalid",mobileNumberPageWebElement.verifySms());
+  }
+//Method 9: Test android colors app download link
+  @Test (priority =9)
+  public void androidPlaystoreLink() throws InterruptedException {
+	  androidPageWebElements.downloadAndroidApp();
+	  AssertJUnit.assertEquals("Colour with Asian Paints - Wall Paint & Design App - Apps on Google Play",androidPageWebElements.verifyPlayStorePage());
+  }
+//Method 10: Test ios colors app download link
+  @Test (priority =10)
+  public void iosAppstoreLink() throws InterruptedException {
+	  iosPageWebElements.scrollToColorsapp();
+	  iosPageWebElements.clickDownloadIosApp();
+	  AssertJUnit.assertEquals("?Colour with Asian Paints on the App Store",iosPageWebElements.verifyAppStorePage());
+  }
 
   @AfterMethod
   public void afterTest() {
 	  driver.quit();
+	  
   }
 
   @BeforeSuite

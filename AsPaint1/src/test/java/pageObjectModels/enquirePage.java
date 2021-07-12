@@ -49,12 +49,19 @@ public class enquirePage {
 		enqButton.click();
 	}
 	public String verifySuccessMessage() throws InterruptedException {
-		Thread.sleep(2000);
+		try {
+		Thread.sleep(4000);
 		String data= successMsg.getText(); 
 		System.out.println("#############################################################");
 		System.out.println(data);
 		System.out.println("#############################################################");
-		return data;
+		return data;}
+		catch(Exception e) {
+			System.out.println("#############################################################");
+			System.out.println("Eliment not found");
+			System.out.println("#############################################################");
+			return null;
+		}
 	}
 	public void closePage() {
 		System.out.println("Browser Closed");

@@ -18,11 +18,12 @@ public class androidPage {
 	public void downloadAndroidApp() {
 		downloadAndroidButton.click();
 	}
-	public  void verifyPlayStorePage() throws InterruptedException {
+	public  String verifyPlayStorePage() throws InterruptedException {
 		Thread.sleep(4000);
 		String window_titel= driver.getTitle();
 		System.out.println("#############################################################");
 		System.out.println(window_titel);
 		System.out.println("#############################################################");
+		return window_titel;
 	}
 }

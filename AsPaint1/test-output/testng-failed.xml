@@ -6,6 +6,9 @@
       <class name="testNg.asPaintTestNg">
         <methods>
           <include name="EnquireFormWithValidData"/>
+          <include name="appDownloadSmsInvalidNumber"/>
+          <include name="appDownloadSmsValidNumber"/>
+          <include name="iosAppstoreLink"/>
           <include name="beforeSuite"/>
           <include name="afterTest"/>
           <include name="beforeTest"/>
