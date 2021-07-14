@@ -6,9 +6,11 @@
       <class name="testNg.asPaintTestNg">
         <methods>
           <include name="iosAppstoreLink"/>
+          <include name="steuoReport"/>
           <include name="beforeSuite"/>
           <include name="afterTest"/>
           <include name="beforeTest"/>
+          <include name="androidPlaystoreLink"/>
           <include name="afterSute"/>
         </methods>
       </class> <!-- testNg.asPaintTestNg -->

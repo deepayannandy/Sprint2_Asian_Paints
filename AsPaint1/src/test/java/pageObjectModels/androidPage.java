@@ -1,5 +1,10 @@
 package pageObjectModels;
 
+import java.io.File;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -25,5 +30,9 @@ public class androidPage {
 		System.out.println(window_titel);
 		System.out.println("#############################################################");
 		return window_titel;
+	}
+	public void takeScreenShot(String name) throws Exception {
+		File scfile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(scfile, new File(name));
 	}
 }

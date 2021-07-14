@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="methods" name="Failed suite [Asian Paint Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="methods" name="Test(failed)">
+    <classes>
+      <class name="testNg.asPaintTestNgParallel">
+        <methods>
+          <include name="EnquireFormWithInvalidEmail" invocation-numbers="0"/>
+          <include name="EnquireFormWithInvalidPincode"/>
+          <include name="appDownloadSmsInvalidNumber"/>
+          <include name="iosAppstoreLink"/>
+          <include name="EnquireFormWithValidData"/>
+          <include name="appDownloadSmsValidNumber"/>
+          <include name="EnquireFormWithInvalidName" invocation-numbers="0"/>
+          <include name="exploreStore"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="androidPlaystoreLink"/>
+        </methods>
+      </class> <!-- testNg.asPaintTestNgParallel -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Asian Paint Test Suite] -->

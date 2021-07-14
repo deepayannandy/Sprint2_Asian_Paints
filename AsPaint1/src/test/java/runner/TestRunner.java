@@ -15,6 +15,9 @@ public class TestRunner {
 // base class and extend
 // properties file Done
 // assert statements Done
-// Apache poi
-// TestNg xml
-// data provider
+// Apache poi done
+// TestNg xml done
+// data provider done 
+// extent report
+//extent spark report 
+//cucumber io
